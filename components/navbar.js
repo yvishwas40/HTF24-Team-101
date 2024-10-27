@@ -67,7 +67,7 @@ let navbar = () => {
         <a href="./p_phothos.html" title="Photo Gallery">Photos</a>
         
         
-        <a href="./fed.html" title="Contact Us">Contact Us</a>
+        <a href="./faq.html" title="Contact Us">Contact Us</a>
        </div>
     </div>
     <i class="fa fa-search changeOfNavi" ></i>

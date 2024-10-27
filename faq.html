@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Support</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" href="https://www.cricbuzz.com/images/cb_favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color:  hsl(200, 96%, 22%);
+            margin-bottom: 20px;
+        }
+
+        .faq-section,
+        .support-section {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-item p {
+            font-weight: bold;
+            color:  hsl(200, 96%, 22%);
+        }
+
+        .faq-answer {
+            padding: 10px;
+            background-color: #f9f9fc;
+            border-radius: 5px;
+        }
+
+        .support-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color:  hsl(200, 96%, 22%);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color:  hsl(200, 96%, 22%);
+        }
+
+        #footer {
+            background:  hsl(200, 96%, 22%);
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #footer div {
+            margin-bottom: 15px;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #footer h3 {
+            margin-bottom: 5px;
+        }
+
+        #footer span {
+            display: block;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>FAQ & Customer Support</h1>
+
+    <div class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <p>Q1: How do I create an account?</p>
+            <div class="faq-answer">
+                <p>A: You can create an account by clicking on the "Sign Up" button on the homepage and filling out the required information.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <p>Q2: How can I reset my password?</p>
+            <div class="faq-answer">
+                <p>A: If you forgot your password, click on the "Forgot Password?" link on the login page to receive a password reset email.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <p>Q3: How can I contact customer support?</p>
+            <div class="faq-answer">
+                <p>A: You can reach out to customer support using the form below, and we'll get back to you as soon as possible.</p>
+            </div>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </div>
+
+    <div class="support-section">
+        <h2>Customer Support</h2>
+        <form class="support-form" id="support-form">
+            <input type="text" id="user-name" placeholder="Your Name" required>
+            <input type="email" id="user-email" placeholder="Your Email" required>
+            <textarea id="issue-description" rows="5" placeholder="Describe your issue" required></textarea>
+            <button type="submit">Submit Support Ticket</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('support-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const name = document.getElementById('user-name').value;
+            const email = document.getElementById('user-email').value;
+            const description = document.getElementById('issue-description').value;
+
+            // Here you would typically send the data to your server
+            alert(`Support ticket submitted! \nName: ${name} \nEmail: ${email} \nIssue: ${description}`);
+
+            // Reset the form fields
+            document.getElementById('support-form').reset();
+        });
+
+        // Footer function
+        const footer = () => {
+            return `<div id="footer">
+                <a href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/60623d43a545b07121150c8e/dc72d6e0-ea69-4147-946a-62fe91e5dba8/sports+iq+white-02.png" alt=""></a>
+                
+                <div>
+                    <h3>MOBILE SITE & APPS</h3>
+                    <a href="https://play.google.com/store/apps/details?id=com.cricbuzz.android">
+                        <i class="fa-brands fa-android"></i>
+                        <span>Android</span>
+                    </a>
+                    <a href="https://itunes.apple.com/app/id360466413">
+                        <i class="fa-brands fa-app-store-ios"></i>
+                        <span>iOS</span>
+                    </a>
+                </div>
+                
+                <div>
+                    <h3>FOLLOW US ON</h3>
+                    <a href="https://www.facebook.com/cricbuzz">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <span>facebook</span>
+                    </a>
+                    <a href="https://twitter.com/cricbuzz">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>twitter</span>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCSRQXk5yErn4e14vN76upOw">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span>youtube</span>
+                    </a>
+                    <a href="https://in.pinterest.com/cricbuzz/">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                        <span>pinterest</span>
+                    </a>
+                </div>
+                <div>
+                    <h3>COMPANY</h3>
+                    <a href="" title="Careers">
+                        <i></i>
+                        <span>Careers</span>
+                    </a>
+                    <a href="" title="Advertise">
+                        <i></i>
+                        <span>Advertise</span>
+                    </a>
+                    <a href="" title="Privacy Policy">
+                        <i></i>
+                        <span>Privacy Policy</span>
+                    </a>
+                    <a href="" title="Terms of Use">
+                        <i></i>
+                        <span>Terms of Use</span>
+                    </a>
+                    
+                </div>
+            </div>
+            <span>© 2024 SportsIQ.com, All rights reserved | </span>`;
+        }
+
+        // Insert the footer into the body
+        document.body.insertAdjacentHTML('beforeend', footer());
+    </script>
+</body>
+
+</html>
