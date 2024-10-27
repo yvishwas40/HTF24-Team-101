@@ -1,5 +1,5 @@
 let navbar = () => {
-    return `<img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="">
+    return `<img src="https://images.squarespace-cdn.com/content/v1/60623d43a545b07121150c8e/dc72d6e0-ea69-4147-946a-62fe91e5dba8/sports+iq+white-02.png" alt="">
     <a href="live.html" title="Live Cricket Score">Live Scores</a>
     <a href="shedule.html" title="Cricket Schedule">Schedule</a>
     <a href="archives.html" title="Cricket Scorecard Archives">Archives</a>

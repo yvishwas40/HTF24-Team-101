@@ -1,6 +1,6 @@
 let footer =()=>{
     return ` <div id="footer">
-    <a href="index.html"><img src="https://www.cricbuzz.com/images/cb_logo.svg" alt=""></a>
+    <a href="index.html"><img src="https://images.squarespace-cdn.com/content/v1/60623d43a545b07121150c8e/dc72d6e0-ea69-4147-946a-62fe91e5dba8/sports+iq+white-02.png" alt=""></a>
     
     <div>
         <h3>MOBILE SITE & APPS</h3>
