@@ -1,6 +1,6 @@
 function foot(){
    return `<div id="no">
-    <img src="https://www.cricbuzz.com/images/cb_logo.svg" alt="">
+    <img src="https://images.squarespace-cdn.com/content/v1/60623d43a545b07121150c8e/dc72d6e0-ea69-4147-946a-62fe91e5dba8/sports+iq+white-02.png" alt="">
     <div class="first_div">
         <h3>MOBILE SITE & APPS</h3>
         <div class="flex"><img src="./components/footer_icon/web.png" alt=""> <p>m.cricbuzz.com</p></div>

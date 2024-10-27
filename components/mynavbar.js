@@ -3,7 +3,7 @@ let mynavbar =()=>{
     <a
       class="Current_Matches"
       href="live.html"
-      title="Cricbuzz Live Scores"
+      title="SportsIQ Live Scores"
       target="_self"
       >Current Matches</a
     >

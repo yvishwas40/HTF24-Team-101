@@ -51,10 +51,7 @@ let footer =()=>{
             <i></i>
             <span>Terms of Use</span>
         </a>
-        <a href="" title="Cricbuzz TV Ads">
-            <i></i>
-            <span>Cricbuzz TV Ads</span>
-        </a>
+        
     </div>
 </div>
 <span>© 2024 SportsIQ.com, All rights reserved | </span>`;
