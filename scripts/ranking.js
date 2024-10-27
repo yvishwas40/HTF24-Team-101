@@ -99,7 +99,6 @@ let allPlayers = [
     {name: 'Glenn Maxwell', country: 'AUSTRALIA', rating: '740', image: 'https://www.cricbuzz.com/a/img/v1/50x50/i1/c170646/glenn-maxwell.jpg', format: 'T20'},
     {name: 'Dwayne Bravo', country: 'WEST INDIES', rating: '720', image: 'https://www.cricbuzz.com/a/img/v1/50x50/i1/c170718/dwayne-bravo.jpg', format: 'T20'},
 ];
-
 // Initializing navbar, footer, etc.
 import navbar from "../components/navbar.js";
 let navbarAppend = document.getElementById("navbar1");
@@ -132,6 +131,7 @@ function searchPlayers(searchTerm) {
 ranking(allPlayers);
 
 // Function to display rankings
+// Function to display rankings
 function ranking(data) {
     let append_box = document.getElementById('append_box');
     append_box.innerHTML = ""; // Clear previous entries
@@ -146,16 +146,13 @@ function ranking(data) {
         img_div.append(img);
         img_div.setAttribute('class', 'img_div');
 
-        // Player's name (with hyperlink and hover effect)
+        // Player's name (as a hyperlink)
         let div1 = document.createElement('div');
         let name = document.createElement('h4');
         name.innerText = el.name;
-        name.classList.add('player-name');
-        
-        // Event listener to show the profile card on hover
-        name.addEventListener('mouseover', () => showProfileCard(el));
-        name.addEventListener('mouseout', hideProfileCard);
-        
+        name.style.cursor = 'pointer'; // Change cursor to pointer
+        name.addEventListener('mouseover', (event) => showProfileCard(el, event)); // Show profile card on hover
+        name.addEventListener('mouseout', hideProfileCard); // Hide profile card when mouse leaves
         div1.setAttribute('class', 'name');
         div1.append(name);
 
@@ -168,32 +165,39 @@ function ranking(data) {
 
         // Player's rating
         let rating = document.createElement('p');
-        rating.innerText = el.rating;
+        rating.innerText = ` ${el.rating}`;
         rating.setAttribute('class', 'rating');
+        rating.setAttribute('style', 'margin-bottom: 10px;'); // Add inline style for margin
+
+        // Player's format
+        let format = document.createElement('p');
+        format.innerText = `${el.format}`; // Displaying the player's format
+        format.setAttribute('class', 'format');
+        format.setAttribute('style', 'margin-top: 50px;'); // Add inline style for margin
 
         // Append all elements to the main div
-        div.append(img_div, div1, div2, rating);
+        div.append(img_div, div1, div2, rating, format); // Include format in the append
         append_box.append(div);
     });
 }
 
 // Function to show profile card
-function showProfileCard(player) {
+// Function to show profile card
+function showProfileCard(player, event) {
     let profileCard = document.getElementById('profile_card');
     profileCard.innerHTML = `
         <img src="${player.image}" alt="Player Image" class="profile-image">
         <h3>${player.name}</h3>
         <p>Country: ${player.country}</p>
         <p>Rating: ${player.rating}</p>
+        <p>Format: ${player.format}</p> <!-- Display the player's format -->
     `;
     profileCard.style.display = 'block';
+    profileCard.style.position = 'absolute'; // Ensure it's positioned absolutely
+    profileCard.style.left = `${event.pageX + 10}px`; // Adjust position
+    profileCard.style.top = `${event.pageY + 10}px`; // Adjust position
 }
-
 // Function to hide profile card
 function hideProfileCard() {
     document.getElementById('profile_card').style.display = 'none';
 }
-
-// Initial call to display all players
-ranking(allPlayers);
-
