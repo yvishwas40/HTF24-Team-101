@@ -51,12 +51,12 @@ let navbar = () => {
         <a href="./video.html" title="All Cricket Videos">All Videos</a>
        </div>
     </div>
-    <div title="ICC Rankings" class="icon dropMenu">
-        <a href="./ranking.html">Rankings</a>
+    <div title="Players" class="icon dropMenu">
+        <a href="./ranking.html">Players</a>
         <i class="fa-solid fa-caret-down"></i>
         <div id="rankings_drop">
-           <a href="./ranking.html" title="ICC Rankings Men">ICC Rankings - Men</a> 
-           <a href="./women_ranking.html" title="ICC Rankings Women">ICC Rankings - Women</a> 
+           <a href="./ranking.html" title="Men's Cricket">Men's Cricket</a> 
+           <a href="./women_ranking.html" title="Women's Cricket">Women's Cricket</a> 
         </div>
 
     </div>

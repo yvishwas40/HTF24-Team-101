@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Players</title>
-<link rel="stylesheet" href="styles/ranking.css">
-<link rel="stylesheet" href="styles/navbar.css">
-<link rel="stylesheet" href="styles/footer.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Players - SportsIQ</title>
+    <link rel="stylesheet" href="styles/women_ranking.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     
@@ -16,41 +16,44 @@
 <div id="navbar2"></div>
 
 <div id="for_bac">
-    <div id="main_contaner">
-
-        <!-- catagory select ⬇️⬇️ -->
-
-        <div id="video_catagory">
-            <h2 id="cri_vid">Men's Cricket</h2>
-            <div>
-            <p id="Batting">Batting</p>
-            <p id="Bowling">Bowling</p>
-            <p id="All-rounders">All-rounders</p>
-            </div>
+    <div id="main_container">
+        
+        <!-- Category Selection -->
+        <div id="video_category">
+            <h2 id="cri_vid">ICC Cricket men's</h2>
         </div>
 
-        <div id="filter">
-
+        <!-- Search Input -->
+        <div id="search_div">
+            <input type="text" id="search_input" placeholder="Search for players...">
         </div>
+
+        <div id="filter"></div>
 
         <div id="data_bar">
-            <p>Position</p>
             <p>Image</p>
             <p>Name</p>
             <p>Country</p>
-            <p>Rating</p>            
+            <p>Rating</p>          
         </div>
 
+        <!-- Container for Player Rankings -->
         <div id="append_box"></div>
 
+        <!-- Profile Card for Hover Display -->
+        <div id="profile_card">
+            <img src="" alt="Player Image" class="profile-image">
+            <h3 id="profile_name">Player Name</h3>
+            <p id="profile_country">Country</p>
+            <p id="profile_rating">Rating</p>
+            <p id="profile_format">Format</p>
+        </div>
 
     </div>
 </div>
 
-<div id="footer_div">
+<div id="footer_div"></div>
 
-</div>
-
+<script src="scripts/ranking.js" type="module"></script>
 </body>
 </html>
-<script src="scripts/ranking.js" type="module"></script>
