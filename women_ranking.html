@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - SportsIQ</title>
+    <link rel="stylesheet" href="styles/women_ranking.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    
+<div id="navbar1"></div>
+<div id="navbar2"></div>
+
+<div id="for_bac">
+    <div id="main_container">
+        
+        <!-- Category Selection -->
+        <div id="video_category">
+            <h2 id="cri_vid">ICC Cricket Women's</h2>
+        </div>
+
+        <!-- Search Input -->
+        <div id="search_div">
+            <input type="text" id="search_input" placeholder="Search for players...">
+        </div>
+
+        <div id="filter"></div>
+
+        <div id="data_bar">
+            <p>Image</p>
+            <p>Name</p>
+            <p>Country</p>
+            <p>Rating & Format</p>          
+        </div>
+
+        <!-- Container for Player Rankings -->
+        <div id="append_box"></div>
+
+        <!-- Profile Card for Hover Display -->
+        <!-- Profile Card for Hover Display -->
+        <div id="profile_card" style="display: none;"> <!-- Start hidden -->
+            <img src="" alt="Player Image" class="profile-image">
+            <h3 id="profile_name">Player Name</h3>
+            <p id="profile_country">Country</p>
+            <p id="profile_rating">Rating</p>
+            <p id="profile_format">Format</p> <!-- Ensure this element exists for the format -->
+        </div>
+
+
+    </div>
+</div>
+
+<div id="footer_div"></div>
+
+<script src="scripts/women_ranking.js" type="module"></script>
+</body>
+</html>

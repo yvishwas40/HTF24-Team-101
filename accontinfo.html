@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="shortcut icon" href="https://www.cricbuzz.com/images/cb_favicon.ico" type="image/x-icon">
+    <style>
+        /* General Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Main Card Styling */
+        #card {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* Section Headings */
+        #profile-section p,
+        #top p {
+            font-size: 1.4rem;
+            color: #0056b3;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .card-section {
+            background-color: #f9f9fc;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .card-section:hover {
+            background-color: #e9e9f0;
+        }
+
+        .card-section i {
+            font-size: 1.2rem;
+            color: #0056b3;
+        }
+
+        #profile-section,
+        #favorite-teams,
+        #match-reminders,
+        #dashboard {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9f9fc;
+            border-radius: 5px;
+        }
+
+        #favorite-teams h3,
+        #match-reminders h3,
+        #dashboard h3 {
+            font-size: 1.2rem;
+            color: #0056b3;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+
+        #proceed,
+        #set-reminder {
+            width: 100%;
+            padding: 10px;
+            background-color: #0056b3;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        #proceed:hover,
+        #set-reminder:hover {
+            background-color: #004494;
+        }
+
+        #avatar img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        #avatar p {
+            color: #0056b3;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Icon styling for sections */
+        .icon-section {
+            display: flex;
+            align-items: center;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        .icon-section i {
+            margin-right: 10px;
+        }
+
+        /* Styling for Favorite Teams Section */
+        #favorite-teams {
+            margin: 15px 0;
+            padding: 15px;
+            background: #f9f9fc;
+            border-radius: 5px;
+        }
+
+        .team-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .team-option img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        /* Reminders Display */
+        .reminder-list {
+            margin-top: 15px;
+        }
+
+        .reminder-item {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9e9f0;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .delete-reminder {
+            background: none;
+            border: none;
+            color: #d9534f;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="card">
+        <div id="profile-section">
+            <p>MY PROFILE</p>
+            <div id="avatar">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQGdD5dLaWtteA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1696093921635?e=1735776000&v=beta&t=GMLQllYq-d-MobSFMGMJtUpQMr5SeA9Ebf3ODSWTaRc" alt="User Avatar">
+                <p><a href="#">Change Avatar</a></p>
+            </div>
+            <p>Username</p>
+            <input type="text" value="yvishwas40" readonly>
+            <p>Name on Card</p>
+            <input type="text" value="Vishwas Yeleshwaram" readonly>
+        </div>
+
+        <div class="card-section">
+            <div class="icon-section">
+                <i class="fa-regular fa-user"></i>
+                <span>My Profile</span>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <div class="card-section">
+            <div class="icon-section">
+                <i class="fa-solid fa-tag"></i>
+                <span>My Coupons</span>
+            </div>
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <a href="plan.html" style="text-decoration: none; color: inherit;">
+            <div class="card-section">
+                <div class="icon-section">
+                    <i class="fa-regular fa-credit-card"></i>
+                    <span>Payment History</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </a>
+        
+        <a href="faq.html" style="text-decoration: none; color: inherit;">
+            <div class="card-section">
+                <div class="icon-section">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span>Get Support / Faq's</span>
+                </div>
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+        </a>
+        
+
+        <a href="/" style="text-decoration: none; color: inherit;">
+            <div class="card-section">
+                <div class="icon-section">
+                    <i class="fa-solid fa-power-off"></i>
+                    <span>Sign Out</span>
+                </div>
+            </div>
+        </a>
+        
+
+        <div id="favorite-teams">
+            <h3>Favorite Teams</h3>
+            <div class="team-option">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/0a/Royal_Challengers_Bengaluru_Logo.png" alt="RCB Logo">
+                <span>Royal Challengers Bangalore</span>
+            </div>
+            <div class="team-option">
+                <img src="https://i1.wp.com/upload.wikimedia.org/wikipedia/en/thumb/8/8d/Cricket_India_Crest.svg/1200px-Cricket_India_Crest.svg.png?strip=all" alt="India Logo">
+                <span>Indian Cricket Team</span>
+            </div>
+            <div class="team-option">
+                <img src="https://www.kkr.in/static-assets/waf-images/88/0d/69/4-3/article-577-e2432a8213bfa379489fb372978689d0.jpg" alt="KKR Logo">
+                <span>Kolkata Knight Riders</span>
+            </div>
+        </div>
+
+        <div id="match-reminders">
+            <h3>Match Reminders</h3>
+            <input type="text" id="event-name" placeholder="Enter match or event">
+            <input type="date" id="reminder-date">
+            <button id="set-reminder">Set Reminder</button>
+            <div class="reminder-list" id="reminder-list">
+                <!-- Reminders will appear here -->
+            </div>
+        </div>
+
+        <div id="dashboard">
+            <h3>Interactive Dashboard</h3>
+            <div style="height: 150px; background: #e9e9f0; display: flex; justify-content: center; align-items: center; border-radius: 5px;">
+                Graphical data will appear here.
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('set-reminder').addEventListener('click', function () {
+            const eventName = document.getElementById('event-name').value;
+            const reminderDate = document.getElementById('reminder-date').value;
+            if (eventName && reminderDate) {
+                const reminderList = document.getElementById('reminder-list');
+                const newReminder = document.createElement('div');
+                newReminder.className = 'reminder-item';
+                newReminder.innerHTML = `${eventName} on ${reminderDate} <button class="delete-reminder">Delete</button>`;
+                
+                newReminder.querySelector('.delete-reminder').addEventListener('click', function () {
+                    reminderList.removeChild(newReminder);
+                });
+
+                reminderList.appendChild(newReminder);
+                document.getElementById('event-name').value = '';
+                document.getElementById('reminder-date').value = '';
+            } else {
+                alert("Please enter both an event name and date.");
+            }
+        });
+    </script>
+</body>
+
+</html>

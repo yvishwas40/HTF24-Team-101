@@ -1,76 +1,55 @@
-# HTF24-Team-101
+Detailed Features for SportIQ
+**User Authentication**
 
-## GitHub submission guide
+**Sign-Up/Login:**
+Allow users to create an account and log in securely.
+Social Media Login: Option for users to log in using their social media accounts (e.g., Facebook, Google).
 
-In this Readme, you will find a guide on how to fork this Repository, add files to it, and make a pull request to contribute your changes.
+**User Profile Management**: Users can update their profile information, including favorite teams and leagues.
+Personalized Experience
 
-<details open>
-<summary><h3>1. Login to your GitHub Account by heading over to <a href="https://github.com">github.com</a></h3></summary>
-<br>
-<ul>
-   <li>Open the <a href="https://github.com/cbitosc/HTF24-Team-101">current repo</a> in a new tab.</li>
-   <li>Perform all operations in the newly opened tab, and follow the current tab for instructions.</li>
-</ul>
-</details>
+**Favorite Teams:** Users can select their favorite teams to customize their dashboard.
+Team Notifications: Set up alerts and notifications for game schedules, results, and other important updates related to favorite teams.
+Match Reminders
 
-<details>
-<summary><h3>2. Fork the Repository</h3></summary>
-<br>
-<ul>
- <li>In the newly opened tab, on the top-right corner, click on <b>Fork</b></li>
- <img src="/images/fork.png">
+**Reminder Setup:** Users can set reminders for upcoming matches, including notifications via email or push notifications.
+Calendar Integration: Option to integrate with Google Calendar or other calendar applications to sync match reminders.
+Interactive Dashboard
 
- <li>Enter the <b>Repository Name</b> as <b>HTF24-Team-101</b>.</li>
- <li>Then click <b>Create Fork</b> leaving all other fields to their default value.</li>
- <img src="/images/create-fork.png">
- <li>After a few moments, you can view the repo.</li>
-</ul>
-</details>
+**Overview of Stats**: Provide a comprehensive view of user-selected teams, displaying live scores, upcoming matches, and past performance.
+Visualizations: Utilize charts and graphs to present team statistics, player performances, and league trends.
 
-<details>
-<summary><h3>3. Clone your Repository</h3></summary>
-<br>
-<ul>
- <li>Click on <b>Code</b> and from the dropdown menu copy your <b>web URL</b> in your forked Repository. </li>
- <img src="/images/clone1.png">
- <li>Now open terminal on your local machine.</li>
- <li>Use the following command to clone your forked Repository:</li>
-<code> git clone https://github.com/your-username/HTF24-Team-101.git </code>
-<hr>
- <img src="/images/clone2.png">
+**Filter Options:** Allow users to filter data by player, team, or date to refine the information displayed on the dashboard.
+Detailed Player and Team Statistics
 
-</ul>
-</details>
+**Player Profiles:** Each player should have a dedicated profile with stats (e.g., goals scored, assists, injuries).
+Team Performance Metrics: Metrics to analyze team performance over a season, including win/loss ratios, points per game, etc.
+League Insights
 
-<details>
-<summary><h3>4. Adding files to the Repository</h3></summary>
-<br/>
-<ul>
- <li>While doing it for the first time, create a new branch for your changes.</li>
-   <code> git checkout -b branch-name </code>
-   <li>Add your files or make modifications to existing files.</li>
-   <li>Stage your changes:</li>
-   <code> git add . </code>
-   <li>Commit your changes:</li>
-   <code> git commit -m "Descriptive commit message" </code>
-   <li>Push changes to your fork </li>
-   <code> git push origin branch-name </code>
-   <hr>
-   
- <img src="/images/push.png">
-</ul>
-</details>
+**League Standings:** Provide real-time standings for leagues the user is interested in.
+Match Analysis: Insights into past matches, including key highlights and statistical breakdowns.
+Search Functionality
 
-<details>
-<summary><h3>5. Create a Pull Request</h3></summary>
-   <br>
-<ul>
- <li>Finally, click on the <b>Contribute</b> button and choose <b>Open Pull Request</b>.</li>
- <img src="/images/PR1.png">
- <li>Leaving all fields to their default values, click on <b>Create Pull Request</b>.</li>
- <img src="/images/PR2.png">
- <li>Wait for a few moments, then you are all done</li>
-</ul>
-</details>
+**Advanced Search Filters:** Allow users to search for teams, players, and matches using various criteria (e.g., name, stats, league).
+Trending Teams and Players: Display popular searches or trending teams and players based on user interactions.
+Real-Time Updates
 
-## Thanks for participating!
+**Live Score Updates:** Implement real-time updates for ongoing matches, including score changes and critical events (e.g., goals, red cards).
+Interactive Match Commentary: Provide live commentary or updates on significant match events.
+Data Analytics and Insights
+
+**Trend Analysis:** Offer analytics tools to examine player or team performance trends over time.
+Predictive Insights: (Optional) Basic machine learning models to predict outcomes of matches based on historical data.
+Social Features
+
+**Discussion Forums:** Allow users to engage in discussions about matches, teams, and player performances.
+Sharing Options: Enable users to share their favorite stats, match highlights, or personal insights on social media.
+User Engagement Features
+
+
+**Dark Mode:** Option to switch to a dark theme for better visibility.
+Responsive Design: Ensure that the platform is usable on various devices, including mobiles, tablets, and desktops.
+Help and Support
+
+**FAQ Section:** Provide answers to common questions users may have about the platform.
+Customer Support: A support ticket system or live chat feature to help users with issues they may encounter.

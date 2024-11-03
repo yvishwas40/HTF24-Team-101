@@ -1,0 +1,212 @@
+/* Basic Styles and Layout */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#main_container {
+    width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: white;
+}
+
+#for_bac {
+    width: 100%;
+    height: auto;
+    background-color: rgb(219, 226, 233);
+}
+
+#video_category {
+    border-bottom: 0.5px solid rgb(163, 156, 156);
+}
+
+#cri_vid {
+    margin-left: 2.5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#video_category > div {
+    display: flex;
+}
+
+#video_category > div > p {
+    margin-left: 2.5%;
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#video_category > div > p:after {
+    content: '';
+    position: absolute;
+    background-color: hsl(200, 96%, 22%);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s; /* Adjust this if needed */
+}
+
+#video_category > div > p:hover {
+    color: black;
+}
+
+#video_category > div > p:hover:after {
+    width: 100%;
+}
+
+#search_div {
+    margin: 20px 2.5%;
+}
+
+#search_input {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#filter {
+    border-bottom: 0.5px solid rgb(163, 156, 156);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+#filter > button {
+    height: 35%;
+    width: 7%;
+    margin-left: 20px;
+    align-items: center;
+    background-color: hsl(200, 96%, 22%);
+    border: 0;
+    border-radius: 100px;
+    color: #ffffff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0px 20px;
+    transition: background-color 0.167s, box-shadow 0.167s, color 0.167s;
+    user-select: none;
+    vertical-align: middle;
+}
+
+#filter > button:hover {
+    background-color: rgb(16, 71, 71);
+    color: #ffffff;
+}
+
+#filter > button:active {
+    background: #023f20;
+    color: rgba(255, 255, 255, .7);
+}
+
+#filter > button:disabled {
+    cursor: not-allowed;
+    background: rgba(0, 0, 0, .08);
+    color: rgba(0, 0, 0, .3);
+}
+
+#data_bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    background-color: rgb(167, 162, 162);
+    font-weight: bold;
+}
+
+#append_box > div {
+    border: 1px solid rgb(230, 227, 227);
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(177, 203, 226);
+    position: relative;
+}
+
+.img_div {
+    margin-left: 18%;
+}
+
+.name {
+    margin-left: 14%;
+    width: 20%;
+    align-items: center;
+    height: auto;
+}
+
+.name h4 {
+    color: #1a73e8;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.name h4:hover {
+    color: #0045a7;
+}
+
+.country {
+    margin-left: 1%;
+    width: 15%;
+}
+
+.rating {
+    margin-left: 7%;
+}
+
+/* Profile Card Styles */
+#profile_card {
+    display: none;
+    position: absolute;
+    top: 90px; /* Adjust position as needed */
+    left: 20%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    width: 200px;
+    z-index: 1000;
+    opacity: 0; /* Start with opacity 0 */
+    transition: opacity 0.5s ease; /* Increase transition duration */
+}
+
+#profile_card img.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+#profile_card h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+#profile_card p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Show profile card on hover */
+.name:hover + #profile_card {
+    display: block;
+    opacity: 1; /* Fade in effect */
+}
+
+/* Reduce the transition on hover to avoid shake */
+#append_box > div:hover {
+    background-color: rgba(177, 203, 226, 0.8); /* Slightly darker on hover */
+    transition: background-color 0.3s ease; /* Increase transition duration */
+}
