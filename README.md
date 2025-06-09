@@ -50,17 +50,6 @@ Welcome to **SportIQ**! This platform delivers a cutting-edge, interactive exper
 
 ---
 
-## 🏗️ Tech Stack
-
-- **Frontend:** React.js / Next.js / Vue.js (specify as applicable)
-- **Backend:** Node.js / Express / Django / Flask (specify as applicable)
-- **Database:** MongoDB / PostgreSQL / MySQL (specify as applicable)
-- **Authentication:** JWT, OAuth2 (Google, Facebook)
-- **Real-Time:** WebSockets, Socket.IO, or Firebase
-- **Visualization:** Chart.js / D3.js / ECharts
-- **Testing:** Jest, React Testing Library, Cypress (or similar)
-- **Deployment:** Docker, Vercel, Netlify, AWS, or your chosen platform
-
 ---
 
 ## 📦 Getting Started
